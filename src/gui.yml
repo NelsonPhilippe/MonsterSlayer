@@ -1,0 +1,38 @@
+# Si l'item est un item special 'mythicItem'
+# nom: 'type'
+shop:
+  name: 'Shop'
+  size: 54
+  insee:
+    slot:
+      - 0:RED_STAINED_GLASS_PANE
+      - 1:RED_STAINED_GLASS_PANE
+      - 2:RED_STAINED_GLASS_PANE
+      - 3:RED_STAINED_GLASS_PANE
+  blood-item:
+    material: GREEN_STAINED_GLASS_PANE
+    slot: 5
+    name: '&4Blood: %blood%'
+  item-sell:
+    item:
+      Exemple:
+        material: STONE
+        display-name: 'Exemple'
+        slot: 4
+        Echantment:
+          type:
+          level:
+        damage: 0.5
+        amount: 1
+        price: 10
+# Permission pour acheter le kit.
+        permission:
+          - default
+# %price% prix de l'item.
+        lore:
+          - 'prix: %price%'
+          - 'il vous faut le grade %permission%'
+          - ''
+# give les items en liste TYPE:ITEM_NAME
+        give:
+          - BOW:HELL_BOW

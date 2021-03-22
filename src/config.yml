@@ -1,0 +1,35 @@
+###################################################
+# ------------- CODED BY XILITRA --------------
+###################################################
+# Temps avant le démarage de la partie une fois le minimum de joueur atteint en secondes.
+waiting-timer: 15
+# Demarage de la première vague.
+start-timer: 10
+# Temps d'attente entre chaque vagues en secondes.
+time-waiting-next-wave: 5
+# Nombre de vagues.
+waves: 5
+# Temps d'achat entre chaque vague.
+shop-time: 10
+# Config mod permet de ne pas lancer de partie pour pouvoir configurer le mini jeux.
+config-mod: true
+#nom du gui d'achat d'item.
+shop: '&8shop'
+# coins win a la fin de la game.
+coins:
+  win: '10:15'
+  lose: '2:5'
+
+#teleporte le joueur sur un autre serveur
+endtaskloose:
+  active: false
+  serveur-name: null
+
+
+kit:
+  item-1:
+    material:
+    echantment:
+    level:
+    name:
+    size:

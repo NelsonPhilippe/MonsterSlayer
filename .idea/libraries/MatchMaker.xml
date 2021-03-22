@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="MatchMaker">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../plugins/MatchMaker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../plugins/PlayFull_InventoryAPI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

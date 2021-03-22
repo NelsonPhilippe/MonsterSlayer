@@ -1,0 +1,101 @@
+# %player% = nombre de player minimum manquant.
+waiting-queue: 'Il manque %player% pour lancer la partie'
+
+title-waiting:
+  5: '5'
+  4: '4'
+  3: '3'
+  2: '2'
+  1: '1'
+  0: 'La partie viens de commencer'
+
+title-start:
+  5: '5'
+  4: '4'
+  3: '3'
+  2: '2'
+  1: '1'
+  0: 'La première vague arrive!'
+
+scoreboard:
+  title: '&4MonsterSlayer'
+  lines:
+    waiting:
+      - 'En attente de joueur'
+    waiting-start:
+      - 'La partie va demarer.'
+    wave:
+      - 'wave %wave% en cours'
+      - 'Blood %blood%'
+    shop:
+      - 'Phase de shopping'
+      - 'Blood %blood%'
+    end:
+      - 'Fin de la partie'
+
+
+join-message:
+  - 'Bienvenue sur le mini jeux MonsterSlayer'
+  - 'Pour voir les règles faites /ms rules'
+
+
+leave-message: '%player% vient de quitter la partie'
+
+kill-message: 'Vous êtes mort'
+
+wave-start: 'La %wave-number% arrive!'
+wave-stop: 'Fin de la vague!'
+
+kit-phase: '/kit pour choisir vos kit, vous avez %time-kit%'
+
+
+blood-amount: 'Vous n''avez pas assez de blood pour acheter cette item.'
+blood-notif: 'Blood: %amount%'
+
+end-message: 'Vous avez remporter la partie'
+end-message_lose: 'Vous avez perdu'
+
+shop-gade: 'Vous n''avez pas le grade requis'
+
+commands:
+  setstartroom: 'Vous venez de changer le spawn de la game.'
+  setwaitingroom: 'Vous venez de changer le spawn de la waiting room'
+  chanceerror: 'La valeur est trop élevé elle doit être inferieur ou égale a 100'
+  wavenoexist: 'La vague numéro %wave% n''existe pas'
+  nowave: 'Verifier la configuration de votre plugin aucune vague n''est présente'
+  argument-available: 'Argument incorrecte'
+  instancenoexist: 'L''instance %instance% n''existe pas'
+  mobnoexist: 'Le mob %mob% n''existe pas'
+  bossnoexist: 'Le mob %boss% n''existe pas'
+  creategame: 'Vous venez de creer une partie | id: %instance%'
+  addspawner: 'Vous venez d''ajouter un spawner'
+  spawnerexistlocation: 'Un spawner se trouve déjà à cette endroit'
+  spawnerexist: 'Un spawner existe d''éjà avec cet id'
+  spawnernoexist: 'Aucun spawner ne possède cet id'
+  addmob: 'Le mob %mob% vient d''être ajouté à la vague %wave% avec un pourcentage de chance de %chance%'
+  addboss: 'Le mob %boss% vient d''être ajouté à la vague %vague% avec un pourcentage de chance de %chance%'
+  setmaxplayer: 'Le nombre de joueurs maximum vient d''être set %value%'
+  setminplayer: 'Le nombre de joueurs minimum vient d''être set %value%'
+  deletemob: 'Le mob %mob% vient d''être supprimé'
+  deleteboss: 'Le boss %boss% vient d''être supprimé'
+  mob-not-exist-in-spawner: 'Aucun mob n''existe avec se nom'
+  boss-not-exist-in-spawner: 'Aucun boss n''exist avec se nom'
+  rules:
+    - 'La partie sera composer de plusieur vagues'
+    - 'Il faut tuer chaque monstre et monstre boss de chaque vague'
+    - 'Les vagues dures %time%'
+    - 'Pour terminer complètement une vague tué tous les monstres encore présent sur la map'
+    - 'Entre chaque vague il est possible d''acheter des items'
+    - 'Les points se gagnent en tuant des monstres'
+  help:
+    - '--------------Liste des commandes--------------'
+    - '&5> &d/ms creategame &5: &eCreer une nouvelle instance de partie.'
+    - '&5> &d/ms createmobspawner &6<instance> <wave> <spawnerID> &5: &eCreer un nouveau spawner de mob.'
+    - '&5> &d/ms addMob &6<type> <lvlmin> <lvlmax> <chance> <instance> <wave> <spawnerID> <blood> &5: &eAjoute un mob à un spawner'
+    - '&5> &d/ms removeMob &6<type> <instance> <wave> <spawnerID> &5: &eSupprime un mob d''un spawner'
+    - '&5> &d/ms addBoss &6<type> <lvlmin> <lvlmax> <chance> <instance> <wave> <spawnerID> <blood> &5: &eAjoute un boss à un spawner'
+    - '&5> &d/ms removeBoss &6<type> <instance> <wave> <spawnerID> &5: &eSupprime un boss d''un spawner'
+    - '&5> &d/ms setplayermin &6<instance> <value> &5: &eModifie la valeur du nombre minimum de joueur pour une partie'
+    - '&5> &d/ms setplayermax &6<instance> <value> &5: &eModifie la valeur du nombre maximum de joueur pour une partie'
+    - '&5> &d/ms setwaitingroom &6<instance> &5: &eSet le spawn de l''instance'
+    - '&5> &d/ms setstartroom &6<instance> <wave> &5: &eSet le spawn de depart pour une vague'

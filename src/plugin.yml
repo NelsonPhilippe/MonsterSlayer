@@ -1,0 +1,9 @@
+main: com.xilitra.monsterslayer.MonsterSlayer
+name: MonsterSlayer
+version: 1.0
+depends: [MythicsMobs, MMOItems]
+authors: [XiliTra]
+api-version: 1.13
+commands:
+  ms:
+    description: Commande de configuration

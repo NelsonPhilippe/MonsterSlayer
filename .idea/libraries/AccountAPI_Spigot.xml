@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AccountAPI_Spigot">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../plugins/AccountAPI_Spigot.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
